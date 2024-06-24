@@ -1,5 +1,10 @@
 //your JS code here.
-
+let currentQuestion = 0; 
+let userAnswers = []; 
+const savedProgress = sessionStorage.getItem("progress");
+if (savedProgress) {
+  userAnswers = JSON.parse(savedProgress);
+}
 // Do not change code below this line
 // This code will just display the questions to the screen
 const questions = [
